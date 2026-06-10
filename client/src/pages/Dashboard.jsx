@@ -14,7 +14,7 @@ const features = [
     description: "Company-specific problem sets using AI",
     phase: "Phase 4",
     link: "/dsa",
-    ready: false,
+    ready: true,
   },
   {
     title: "Mock Interview",

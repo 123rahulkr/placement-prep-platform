@@ -32,6 +32,8 @@ const authRoutes = require("./routes/auth");
 app.use("/api/auth", authRoutes);
 const resumeRoutes = require("./routes/resume");
 app.use("/api/resume", resumeRoutes);
+const dsaRoutes = require("./routes/dsa");
+app.use("/api/dsa", dsaRoutes);
 
 mongoose
   .connect(process.env.MONGO_URI)

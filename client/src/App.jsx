@@ -6,7 +6,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
-
+import DSARoadmap from "./pages/DSARoadmap";
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
@@ -37,6 +37,14 @@ export default function App() {
             element={
               <ProtectedRoute>
                 <ResumeAnalyzer />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/dsa"
+            element={
+              <ProtectedRoute>
+                <DSARoadmap />
               </ProtectedRoute>
             }
           />
