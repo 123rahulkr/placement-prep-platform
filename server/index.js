@@ -30,6 +30,8 @@ app.get("/health", (req, res) => {
 
 const authRoutes = require("./routes/auth");
 app.use("/api/auth", authRoutes);
+const resumeRoutes = require("./routes/resume");
+app.use("/api/resume", resumeRoutes);
 
 mongoose
   .connect(process.env.MONGO_URI)

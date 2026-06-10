@@ -7,7 +7,7 @@ const features = [
     description: "ATS score, keyword analysis, recruiter feedback",
     phase: "Phase 3",
     link: "/resume",
-    ready: false,
+    ready: true,
   },
   {
     title: "DSA Roadmap",

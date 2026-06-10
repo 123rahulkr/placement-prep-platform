@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import ResumeAnalyzer from "./pages/ResumeAnalyzer";
 
 import Login from "./pages/Login";
 import Register from "./pages/Register";
@@ -28,6 +29,14 @@ export default function App() {
             element={
               <ProtectedRoute>
                 <Dashboard />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/resume"
+            element={
+              <ProtectedRoute>
+                <ResumeAnalyzer />
               </ProtectedRoute>
             }
           />
